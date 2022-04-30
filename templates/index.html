@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action='/' method='post'>
+        <input placeholder='Name' name='name'>
+        <input placeholder='Post Content' name='post'>
+        <input type='submit' value='Submit'>
+    </form>
+    {% for post in posts %}
+        <div>{{ post(1) + ': ' + post(2) }}</div>
+
+    {% endfor %}
+</body>
+</html>
